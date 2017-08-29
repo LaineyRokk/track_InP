@@ -1,17 +1,28 @@
-$(document).ready(function() {
-   var design = prompt("Do you enjoy the design part of a presentation? Y for yes N for no").toUpperCase();
-   var work = prompt("Would you like working for a large corporation? Y for yes N for no").toUpperCase();
-   var startup = prompt("Would you like to work for a start up company? Y for yes N for no").toUpperCase();
-   var apps = prompt("Would you like to design Android applications? Y for yes N for no").toUpperCase();
-   var web = prompt("Do you like web developement? Y for yes N for no").toUpperCase();
+$(function() {
+  $("form").submit(function(event) {
+    $(".track").hide();
+    var work = $("select#work").val();
+    var project = $("select#project").val();
+    var communicate = $("select#communicate").val();
+    var salary = $("select#salary").val();
+    var activity = $("select#activity").val();
 
-      if (design === "Y" && work === "Y"){
-      $("#c").show();
-    } else if (design === "Y" && work === "N") {
-      $("#ruby").show();
-    } else if (design === "N" && work === "Y") {
-      $("#php").show();
-    } else if (design === "N" && orientation === "N") {
-      $("#ruby").show();
+    console.log(work);
+    console.log(project);
+    console.log(communicate);
+    console.log(salary);
+    console.log(activity);
+
+    if (communicate === "a" && salary === "a") {
+      $(".C#").show();
+    } else if (work === "b" && project === "b" && communicate === "b") {
+      $(".php").show();
+    } else if (work === "c" && communicate === "c" && activity === "c") {
+      $(".ruby").show();
+    } else {
+      $(".all").show();
     }
+
+    event.preventDefault();
   });
+});
