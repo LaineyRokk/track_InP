@@ -1,12 +1,6 @@
 .jumbotron h1 {
   text-align: center;
-  color: #99e6e6;
-}
-
-img {
-  display: none;
-  float: right;
-  margin: auto;
+  color: #006666;
 }
 
 body {
@@ -21,7 +15,7 @@ button {
   margin-left: 20px;
 }
 
- .lang {
+ .track {
    display: none;
    text-align: center;
    margin-bottom: 40px;
@@ -34,6 +28,6 @@ button {
 
 .question {
   font-style: italic;
-  font-weight: bold;
+  font-weight: 200;
   color: 006666;
 }

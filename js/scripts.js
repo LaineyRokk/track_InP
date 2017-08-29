@@ -1,6 +1,6 @@
-$(function() {
+$(document).ready(function() {
   $("form").submit(function(event) {
-    $(".lang").hide();
+    $(".track").hide();
     var work = $("select#work").val();
     var project = $("select#project").val();
     var communicate = $("select#communicate").val();
