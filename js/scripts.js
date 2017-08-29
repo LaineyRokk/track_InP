@@ -1,6 +1,6 @@
 $(function() {
   $("form").submit(function(event) {
-    $(".track").hide();
+    $(".lang").hide();
     var work = $("select#work").val();
     var project = $("select#project").val();
     var communicate = $("select#communicate").val();
@@ -14,7 +14,7 @@ $(function() {
     console.log(activity);
 
     if (communicate === "a" && salary === "a") {
-      $(".C#").show();
+      $(".cSharp").show();
     } else if (work === "b" && project === "b" && communicate === "b") {
       $(".php").show();
     } else if (work === "c" && communicate === "c" && activity === "c") {
